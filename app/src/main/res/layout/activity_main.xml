@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/color7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Hello, Admin"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Your personal account"
+            android:textSize="20sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_box"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/upper_bg"
+        android:background="@color/white"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="-80dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/color7"
+            android:text="Personal Account"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/color7"
+            android:text="Main"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color7"
+            android:text="Contacts"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/color7"
+            android:text="Blog"/>
+
+    </LinearLayout>
+    
+</RelativeLayout>
