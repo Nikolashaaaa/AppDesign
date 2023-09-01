@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+F<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -55,6 +55,51 @@
 
     </RelativeLayout>
 
+    <EditText
+        android:id="@+id/user_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/main_box"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="Enter your name" />
+
+    <EditText
+        android:id="@+id/user_bio_field"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/user_name_field"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter bio"
+        android:textColorHint="@color/black"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_bio_field"
+        android:layout_marginStart="50sp"
+        android:backgroundTint="@color/color7"
+        android:onClick="saveData"
+        android:text="Save" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_bio_field"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50sp"
+        android:backgroundTint="@color/color7"
+        android:onClick="getData"
+        android:text="Upload" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -65,23 +110,24 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
+            android:layout_marginStart="30sp"
             android:backgroundTint="@color/color7"
             android:text="Main"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
             android:backgroundTint="@color/color7"
             android:text="Contacts"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
+            android:layout_marginStart="20sp"
             android:backgroundTint="@color/color7"
-            android:text="Blog"/>
+            android:text="Blog" />
 
     </LinearLayout>
-    
+
 </RelativeLayout>
