@@ -2,6 +2,7 @@ package com.example.appdesign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -65,5 +66,10 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void goContacts(View view) {
+        Intent intent = new Intent(this, ContactsActivity.class);
+        startActivity(intent);
     }
 }
