@@ -20,7 +20,7 @@ public class ContactsActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.listView);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, namesArr);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.name_item, R.id.user_name, namesArr);
         listView.setAdapter(adapter);
     }
 
