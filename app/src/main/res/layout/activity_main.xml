@@ -127,6 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
             android:backgroundTint="@color/color7"
+            android:onClick="goWeb"
             android:text="Blog" />
 
     </LinearLayout>
