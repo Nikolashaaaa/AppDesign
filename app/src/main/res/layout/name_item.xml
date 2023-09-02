@@ -18,6 +18,8 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/color7"
         android:text="Delete"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>
